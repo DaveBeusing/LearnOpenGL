@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build active file",
+            "command": "C:/Program Files (x86)/msys2/ucrt64/bin/g++.exe",
+            "args": [
+                "-g",
+                "-std=c++17",
+                "-I${workspaceFolder}/include",
+                "-I${workspaceFolder}/vendor",
+                "-L${workspaceFolder}/lib",
+                "${workspaceFolder}/src/main.cpp",
+                "${workspaceFolder}/vendor/glad/glad.c",
+                "-lglfw3dll",
+                "-o",
+                "${workspaceFolder}/build/LearnOpenGL.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "compiler: C:/Program Files (x86)/msys2/ucrt64/bin/g++.exe"
+        }
+    ]
+}
