@@ -20,6 +20,18 @@
 void framebuffer_size_callback( GLFWwindow* window, int width, int height );
 void processInput( GLFWwindow *window );
 
+
+void getOpenGLVersionInfo(){
+
+    std::cout << "Version: " << glGetString( GL_VERSION ) << std::endl;
+    std::cout << "Vendor: " << glGetString( GL_VENDOR ) << std::endl;
+    std::cout << "Renderer: " << glGetString( GL_RENDERER ) << std::endl;
+    std::cout << "Vendor: " << glGetString( GL_SHADING_LANGUAGE_VERSION ) << std::endl;
+
+
+}
+
+
 //globals
 const unsigned int screenWidth = 800;
 const unsigned int screenHeight = 600;
@@ -62,6 +74,7 @@ int main( void ){
         return -1;
     }  
 
+    getOpenGLVersionInfo();
     
     // We have to tell OpenGL the size of the rendering window so OpenGL knows how we want to display the data and coordinates with respect to the window.
     glViewport( 0, 0, screenWidth, screenHeight );

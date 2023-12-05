@@ -20,5 +20,7 @@ I use VSCode as IDE and windows-gcc-x64 for compiling.
  #include <stb/stb_image.h><br>
 
 #### Additional reading
-[https://learnopengl.com/](https://learnopengl.com/)<br>
+[https://learnopengl.com](https://learnopengl.com/)<br>
+[https://www.scratchapixel.com](https://www.scratchapixel.com/index.html)<br>
+[https://docs.gl](https://docs.gl/)
 
